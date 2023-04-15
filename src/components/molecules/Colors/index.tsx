@@ -14,7 +14,6 @@ export default function Colors({ colors }: Props) {
   return (
     <div>
       <h3 className="text-sm font-medium text-gray-900">Color</h3>
-
       <RadioGroup
         value={selectedColor}
         onChange={setSelectedColor}
