@@ -1,16 +1,16 @@
 import { ThunkAction, configureStore } from '@reduxjs/toolkit';
 import { Action, Store, combineReducers } from 'redux';
 import logger from 'redux-logger';
-import counterSlice, {
-  initialState as counterState,
-} from '@/src/ducks/counter/slice';
+import overviewsSlice, {
+  initialState as overviewsState,
+} from '@/src/ducks/overviews/slice';
 
 const rootReducer = combineReducers({
-  counter: counterSlice.reducer,
+  overviews: overviewsSlice.reducer,
 });
 
 const preloadedState = () => {
-  return { counter: counterState };
+  return { overviews: overviewsState };
 };
 
 export type StoreState = ReturnType<typeof preloadedState>;
