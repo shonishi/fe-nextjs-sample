@@ -71,7 +71,7 @@ const product = {
 };
 const reviews = { href: '#', average: 4, totalCount: 117 };
 
-export default function ConfirmationMain() {
+export default function OverviewsMain() {
   return (
     <div className="bg-white">
       <div className="pt-6">
