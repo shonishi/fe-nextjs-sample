@@ -2,7 +2,7 @@ import { ThunkAction, configureStore } from '@reduxjs/toolkit';
 import { Action, Store, combineReducers } from 'redux';
 import logger from 'redux-logger';
 import overviewsSlice, {
-  initialState as overviewsState,
+  initialState as overviewsInitialState,
 } from '@/src/ducks/overviews/slice';
 
 const rootReducer = combineReducers({
@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
 });
 
 const preloadedState = () => {
-  return { overviews: overviewsState };
+  return { overviews: overviewsInitialState };
 };
 
 export type StoreState = ReturnType<typeof preloadedState>;
