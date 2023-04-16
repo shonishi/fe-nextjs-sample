@@ -1,6 +1,6 @@
 import Response from './response';
 export async function fetchProductOverviews() {
-  // TODO サーバから取得するように変更
+  // 本来ならばAPIサーバへ通信し情報を取得する。今回のサンプル作成では簡略化し固定値をレスポンスする。
   return await new Promise<Response>((resolve) =>
     setTimeout(() => {
       return resolve({
@@ -33,7 +33,7 @@ export async function fetchProductOverviews() {
         ],
         colors: [
           {
-            name: 'Pale white',
+            name: 'Pale yellow',
             class: 'bg-yellow-50',
             selectedClass: 'ring-gray-400',
           },
@@ -58,16 +58,15 @@ export async function fetchProductOverviews() {
           { name: '2XL', inStock: true },
           { name: '3XL', inStock: true },
         ],
-        description:
-          'あひるのフィギュアです。お風呂に浮かべて楽しいひと時をお過ごしください。',
+        description: 'あひるのフィギュアです。お風呂に浮かべて楽しいひと時。',
         highlights: [
           'お風呂に浮く',
-          '握ると音がする',
-          'お子様の筋力強化に',
-          'シリコン製',
+          '握ると音が鳴る',
+          'シリコン製で丈夫',
+          'お子様の筋力強化にも',
         ],
         details:
-          'シリコン製のため耐久力が高く、小傷が入りにくいため衛生面でも安心です。音を出すにはある程度の力で握る必要がありますので、楽しみながらお子様の筋力を強化することができます。各種サイズをご用意しておりますので、お子様の手の大きさに合う物をお選びいただけます。',
+          'かわいいあひるちゃんの5羽セット。シリコン製のため小傷が入りにくく、衛生面も安心です。音を出すにはある程度の力で握る必要がありますので、楽しみながらお子様の筋力を強化することができます。各種サイズをご用意しておりますので、お子様の手の大きさに合う物をお選びいただけます。',
         reviews: { href: '#', average: 4, totalCount: 117 },
       });
     }, 500),
