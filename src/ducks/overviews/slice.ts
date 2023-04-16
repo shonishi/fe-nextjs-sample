@@ -55,7 +55,8 @@ export const overviewsSlice = createSlice({
         const selectedSize = action.payload.sizes.find((size) => size.inStock);
         const selectedSizeId = selectedSize
           ? selectedSize.id
-          : action.payload.sizes[0].id;
+          : // 本来であれば在庫がない旨の表示をするべき。サンプルのため処理を簡略化する。
+            0;
         state.loadData = {
           ...action.payload,
           selectedColorId: action.payload.colors[0].id,

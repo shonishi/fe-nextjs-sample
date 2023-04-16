@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "test": "jest --collectCoverage",
+    "test": "jest --collectCoverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
     "start": "next start",
     "lint": "next lint"
   },
@@ -24,6 +24,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
