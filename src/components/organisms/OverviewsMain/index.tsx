@@ -1,24 +1,24 @@
+import { useAppDispatch, useAppSelector } from '@/src/ducks/hooks';
+import { load } from '@/src/ducks/overviews/asyncActions';
+import { selectOverviews } from '@/src/ducks/overviews/slice';
+import { useEffect, useRef } from 'react';
 import Breadcrumbs from '../../molecules/Breadcrumbs';
+import Colors from '../../molecules/Colors';
+import Description from '../../molecules/Description';
+import Details from '../../molecules/Details';
+import Highlights from '../../molecules/Highlights';
 import ImageGallery from '../../molecules/ImageGallery';
 import Reviews from '../../molecules/Reviews';
-import Colors from '../../molecules/Colors';
 import Sizes from '../../molecules/Sizes';
-import Description from '../../molecules/Description';
-import Highlights from '../../molecules/Highlights';
-import Details from '../../molecules/Details';
-import { useAppDispatch, useAppSelector } from '@/src/ducks/hooks';
-import { selectOverviews } from '@/src/ducks/overviews/slice';
-import { useEffect, useState } from 'react';
-import { load } from '@/src/ducks/overviews/asyncActions';
 
 export default function OverviewsMain() {
   const loadData = useAppSelector(selectOverviews).loadData;
   const dispatch = useAppDispatch();
-  const [loading, setLoading] = useState(false);
+  const loading = useRef(false);
   useEffect(() => {
-    if (!loading) {
+    if (!loading.current) {
+      loading.current = true;
       dispatch(load());
-      setLoading(true);
     }
   }, [loading, dispatch]);
 
