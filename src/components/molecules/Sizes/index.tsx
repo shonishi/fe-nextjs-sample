@@ -1,15 +1,19 @@
+import { useAppDispatch } from '@/src/ducks/hooks';
+import { selectSize } from '@/src/ducks/overviews/slice';
 import { RadioGroup } from '@headlessui/react';
-import { useState } from 'react';
 
 interface Props {
   sizes: {
+    id: number;
     name: string;
     inStock: boolean;
   }[];
+  selectedSizeId: number;
 }
 
-export default function Sizes({ sizes }: Props) {
-  const [selectedSize, setSelectedSize] = useState(sizes[2]);
+export default function Sizes({ sizes, selectedSizeId }: Props) {
+  const dispatch = useAppDispatch();
+  const selectedSize = sizes.find((size) => size.id === selectedSizeId);
   return (
     <div className="mt-10">
       <div className="flex items-center justify-between">
@@ -24,7 +28,7 @@ export default function Sizes({ sizes }: Props) {
 
       <RadioGroup
         value={selectedSize}
-        onChange={setSelectedSize}
+        onChange={(e) => dispatch(selectSize(e.id))}
         className="mt-4"
       >
         <RadioGroup.Label className="sr-only"> Choose a size </RadioGroup.Label>

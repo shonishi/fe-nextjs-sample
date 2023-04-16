@@ -9,11 +9,12 @@ export default interface Response {
     alt: string;
   }[];
   colors: {
+    id: number;
     name: string;
     class: string;
     selectedClass: string;
   }[];
-  sizes: { name: string; inStock: boolean }[];
+  sizes: { id: number; name: string; inStock: boolean }[];
   description: string;
   highlights: string[];
   details: string;

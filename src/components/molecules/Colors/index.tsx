@@ -1,22 +1,26 @@
+import { useAppDispatch } from '@/src/ducks/hooks';
+import { selectColor } from '@/src/ducks/overviews/slice';
 import { RadioGroup } from '@headlessui/react';
-import { useState } from 'react';
 
 interface Props {
   colors: {
+    id: number;
     name: string;
     class: string;
     selectedClass: string;
   }[];
+  selectedColorId: number;
 }
 
-export default function Colors({ colors }: Props) {
-  const [selectedColor, setSelectedColor] = useState(colors[0]);
+export default function Colors({ colors, selectedColorId }: Props) {
+  const dispatch = useAppDispatch();
+  const selectedColor = colors.find((color) => color.id === selectedColorId);
   return (
     <div>
       <h3 className="text-sm font-medium text-gray-900">Color</h3>
       <RadioGroup
         value={selectedColor}
-        onChange={setSelectedColor}
+        onChange={(e) => dispatch(selectColor(e.id))}
         className="mt-4"
       >
         <RadioGroup.Label className="sr-only">Choose a color</RadioGroup.Label>
