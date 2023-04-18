@@ -35,12 +35,12 @@ export const overviewsSlice = createSlice({
   name: 'Overviews',
   initialState,
   reducers: {
-    selectColor: (state, action: PayloadAction<number>) => {
+    changeColor: (state, action: PayloadAction<number>) => {
       if (state.loadData) {
         state.loadData.selectedColorId = action.payload;
       }
     },
-    selectSize: (state, action: PayloadAction<number>) => {
+    changeSize: (state, action: PayloadAction<number>) => {
       if (state.loadData) {
         state.loadData.selectedSizeId = action.payload;
       }
@@ -65,6 +65,6 @@ export const overviewsSlice = createSlice({
       });
   },
 });
-export const { selectColor, selectSize } = overviewsSlice.actions;
+export const { changeColor, changeSize } = overviewsSlice.actions;
 export const selectOverviews = (state: RootState) => state.overviews;
 export default overviewsSlice;

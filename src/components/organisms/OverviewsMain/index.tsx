@@ -1,6 +1,10 @@
 import { useAppDispatch, useAppSelector } from '@/src/ducks/hooks';
 import { load } from '@/src/ducks/overviews/asyncActions';
-import { selectOverviews } from '@/src/ducks/overviews/slice';
+import {
+  changeColor,
+  changeSize,
+  selectOverviews,
+} from '@/src/ducks/overviews/slice';
 import { useEffect, useRef } from 'react';
 import Breadcrumbs from '../../molecules/Breadcrumbs';
 import Colors from '../../molecules/Colors';
@@ -54,10 +58,12 @@ export default function OverviewsMain() {
               <Colors
                 colors={loadData.colors}
                 selectedColorId={loadData.selectedColorId}
+                changeColor={changeColor}
               />
               <Sizes
                 sizes={loadData.sizes}
                 selectedSizeId={loadData.selectedSizeId}
+                changeSize={changeSize}
               />
               <button
                 type="submit"
