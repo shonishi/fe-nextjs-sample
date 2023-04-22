@@ -1,22 +1,10 @@
 import { Provider } from 'react-redux';
 import Overviews from '.';
 import { render, screen } from '@testing-library/react';
-import { configureStore } from '@reduxjs/toolkit';
-import overviewsSlice from '@/src/ducks/overviews/slice';
-import { ToolkitStore } from '@reduxjs/toolkit/dist/configureStore';
 import userEvent from '@testing-library/user-event';
 import { store } from '@/src/ducks/store';
 
 describe('Overviews', () => {
-  // let store: ToolkitStore;
-  // beforeEach(() => {
-  //   store = configureStore({
-  //     reducer: {
-  //       overviews: overviewsSlice.reducer,
-  //     },
-  //   });
-  // });
-
   it('初期表示で正常にレンダリングされること', async () => {
     render(
       <Provider store={store}>
