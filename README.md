@@ -30,3 +30,9 @@ yarn test
 ## CI
 
 Github Actions を使用しています。master ブランチへの PR/マージ時にビルド、静的解析、テストが実施されます。
+
+## CD
+
+master ブランチへのマージで netlify へデプロイされます。
+
+https://shonishi-fe-nextjs-sample.netlify.app/product/overviews へアクセス
