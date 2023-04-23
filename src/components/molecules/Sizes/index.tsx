@@ -7,7 +7,10 @@ interface Props {
     inStock: boolean;
   }[];
   selectedSizeId: number;
-  changeSize: (e: { id: number }) => Record<string, never>;
+  changeSize: (e: { id: number }) => {
+    payload: number;
+    type: string;
+  };
 }
 
 export default function Sizes({ sizes, selectedSizeId, changeSize }: Props) {

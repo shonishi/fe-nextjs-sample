@@ -8,7 +8,10 @@ export interface Props {
     selectedClass: string;
   }[];
   selectedColorId: number;
-  changeColor: (e: { id: number }) => Record<string, never>;
+  changeColor: (e: { id: number }) => {
+    payload: number;
+    type: string;
+  };
 }
 
 export default function Colors({
