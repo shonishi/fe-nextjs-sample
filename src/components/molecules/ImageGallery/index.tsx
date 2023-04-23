@@ -5,6 +5,9 @@ interface Props {
 }
 
 export default function ImageGallery({ images }: Props) {
+  if (images.length === 0) {
+    return <></>;
+  }
   return (
     <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
       <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">

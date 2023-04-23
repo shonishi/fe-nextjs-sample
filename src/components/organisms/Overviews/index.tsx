@@ -1,11 +1,3 @@
-import { useAppDispatch, useAppSelector } from '@/src/ducks/hooks';
-import { load } from '@/src/ducks/overviews/asyncActions';
-import {
-  changeColor,
-  changeSize,
-  selectOverviews,
-} from '@/src/ducks/overviews/slice';
-import { useEffect, useRef } from 'react';
 import Breadcrumbs from '../../molecules/Breadcrumbs';
 import Colors from '../../molecules/Colors';
 import Description from '../../molecules/Description';
@@ -14,22 +6,16 @@ import Highlights from '../../molecules/Highlights';
 import ImageGallery from '../../molecules/ImageGallery';
 import Reviews from '../../molecules/Reviews';
 import Sizes from '../../molecules/Sizes';
+import { useOverviewsViewModel } from '@/src/ducks/overviews/hooks';
 
-export default function OverviewsMain() {
-  const loadData = useAppSelector(selectOverviews).loadData;
-  const dispatch = useAppDispatch();
-  const loading = useRef(false);
-  useEffect(() => {
-    if (!loading.current) {
-      loading.current = true;
-      dispatch(load());
-    }
-  }, [loading, dispatch]);
-
-  if (loadData == null) {
+export default function Overviews({
+  loadData,
+  changeColor,
+  changeSize,
+}: ReturnType<typeof useOverviewsViewModel>) {
+  if (!loadData) {
     return <></>;
   }
-
   return (
     <div className="bg-white">
       <div className="pt-6">

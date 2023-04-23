@@ -1,8 +1,6 @@
-import { useAppDispatch } from '@/src/ducks/hooks';
 import { RadioGroup } from '@headlessui/react';
-import { ActionCreatorWithPayload } from '@reduxjs/toolkit';
 
-interface Props {
+export interface Props {
   colors: {
     id: number;
     name: string;
@@ -10,7 +8,10 @@ interface Props {
     selectedClass: string;
   }[];
   selectedColorId: number;
-  changeColor: ActionCreatorWithPayload<number, string>;
+  changeColor: (e: { id: number }) => {
+    payload: number;
+    type: string;
+  };
 }
 
 export default function Colors({
@@ -18,16 +19,11 @@ export default function Colors({
   selectedColorId,
   changeColor,
 }: Props) {
-  const dispatch = useAppDispatch();
   const selectedColor = colors.find((color) => color.id === selectedColorId);
   return (
     <div>
       <h3 className="text-sm font-medium text-gray-900">Color</h3>
-      <RadioGroup
-        value={selectedColor}
-        onChange={(e) => dispatch(changeColor(e.id))}
-        className="mt-4"
-      >
+      <RadioGroup value={selectedColor} onChange={changeColor} className="mt-4">
         <RadioGroup.Label className="sr-only">Choose a color</RadioGroup.Label>
         <div className="flex items-center space-x-3">
           {colors.map((color) => (
