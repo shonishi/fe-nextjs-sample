@@ -1,6 +1,4 @@
-import { useAppDispatch } from '@/src/ducks/hooks';
 import { RadioGroup } from '@headlessui/react';
-import { ActionCreatorWithPayload } from '@reduxjs/toolkit';
 
 interface Props {
   sizes: {
@@ -9,11 +7,10 @@ interface Props {
     inStock: boolean;
   }[];
   selectedSizeId: number;
-  changeSize: ActionCreatorWithPayload<number, string>;
+  changeSize: (e: { id: number }) => Record<string, never>;
 }
 
 export default function Sizes({ sizes, selectedSizeId, changeSize }: Props) {
-  const dispatch = useAppDispatch();
   const selectedSize = sizes.find((size) => size.id === selectedSizeId);
   return (
     <div className="mt-10">
@@ -27,11 +24,7 @@ export default function Sizes({ sizes, selectedSizeId, changeSize }: Props) {
         </a>
       </div>
 
-      <RadioGroup
-        value={selectedSize}
-        onChange={(e) => dispatch(changeSize(e.id))}
-        className="mt-4"
-      >
+      <RadioGroup value={selectedSize} onChange={changeSize} className="mt-4">
         <RadioGroup.Label className="sr-only"> Choose a size </RadioGroup.Label>
         <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
           {sizes.map((size) => (

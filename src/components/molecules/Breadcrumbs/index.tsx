@@ -3,6 +3,9 @@ interface Props {
 }
 
 export default function Breadcrumbs({ breadcrumbs }: Props) {
+  if (breadcrumbs.length === 0) {
+    return <></>;
+  }
   return (
     <nav aria-label="Breadcrumb">
       <ol

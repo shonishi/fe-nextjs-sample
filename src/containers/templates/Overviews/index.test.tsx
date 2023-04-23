@@ -1,8 +1,8 @@
 import { Provider } from 'react-redux';
-import Overviews from '.';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { store } from '@/src/ducks/store';
+import Overviews from '.';
 
 describe('Overviews', () => {
   it('初期表示で正常にレンダリングされること', async () => {

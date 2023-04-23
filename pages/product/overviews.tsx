@@ -1,4 +1,4 @@
-import Overviews from '@/src/components/templates/Overviews';
+import Overviews from '@/src/containers/templates/Overviews';
 
 export default function Page() {
   return <Overviews />;
