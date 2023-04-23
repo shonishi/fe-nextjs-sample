@@ -19,7 +19,17 @@ yarn install
 yarn dev
 ```
 
-http://localhost:3000/product/overviews へアクセス
+画面の表示
+
+```
+http://localhost:3000/product/overviews
+```
+
+storybook の表示
+
+```
+yarn storybook
+```
 
 ## テスト
 
@@ -37,3 +47,9 @@ Github Actions を使用しています。master ブランチへの PR/マージ
 master ブランチへのマージで netlify へデプロイされます。
 
 https://shonishi-fe-nextjs-sample.netlify.app/product/overviews へアクセス
+
+## Pages
+
+master ブランチへのマージで GitHub Pages へ storybook が公開されます。
+
+https://shonishi.github.io/fe-nextjs-sample/ へアクセス
