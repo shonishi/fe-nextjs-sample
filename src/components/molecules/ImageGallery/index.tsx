@@ -15,7 +15,9 @@ export default function ImageGallery({ images }: Props) {
           src={images[0].src}
           alt={images[0].alt}
           className="h-full w-full object-cover object-center"
-          fill
+          width="0"
+          height="0"
+          sizes="100vw"
         />
       </div>
       {images.length > 1 && (
@@ -25,7 +27,9 @@ export default function ImageGallery({ images }: Props) {
               src={images[1].src}
               alt={images[1].alt}
               className="h-full w-full object-cover object-center"
-              fill
+              width="0"
+              height="0"
+              sizes="100vw"
             />
           </div>
           {images.length > 2 && (
@@ -34,7 +38,9 @@ export default function ImageGallery({ images }: Props) {
                 src={images[2].src}
                 alt={images[2].alt}
                 className="h-full w-full object-cover object-center"
-                fill
+                width="0"
+                height="0"
+                sizes="100vw"
               />
             </div>
           )}
@@ -46,7 +52,10 @@ export default function ImageGallery({ images }: Props) {
             src={images[3].src}
             alt={images[3].alt}
             className="h-full w-full object-cover object-center"
-            fill
+            width="0"
+            height="0"
+            sizes="100vw"
+            priority={true}
           />
         </div>
       )}
