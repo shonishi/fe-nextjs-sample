@@ -13,7 +13,19 @@ Next.js を使用した fe サーバのサンプルです
 yarn install
 ```
 
+ビルド
+
+```
+yarn build
+```
+
 アプリの起動
+
+```
+yarn start
+```
+
+開発者モードでのアプリの起動
 
 ```
 yarn dev
