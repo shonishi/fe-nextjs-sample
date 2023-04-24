@@ -5,7 +5,7 @@
 
 Next.js を使用した fe サーバのサンプルです
 
-## 実行手順
+## 環境構築
 
 ライブラリのインストール
 
@@ -13,7 +13,19 @@ Next.js を使用した fe サーバのサンプルです
 yarn install
 ```
 
+ビルド
+
+```
+yarn build
+```
+
 アプリの起動
+
+```
+yarn start
+```
+
+開発者モードでのアプリの起動
 
 ```
 yarn dev
@@ -25,22 +37,27 @@ yarn dev
 http://localhost:3000/product/overviews
 ```
 
-storybook の表示
+## component の表示確認
 
 ```
 yarn storybook
 ```
 
-## テスト
+## 静的解析
 
 ```
 yarn lint
+```
+
+## テスト
+
+```
 yarn test
 ```
 
 ## CI
 
-Github Actions を使用しています。master ブランチへの PR/マージ時にビルド、静的解析、テストが実施されます。
+Github Actions で、master ブランチへの PR/マージ時にビルド、静的解析、テストが実施されます。
 
 ## CD
 
@@ -48,8 +65,6 @@ master ブランチへのマージで netlify へデプロイされます。
 
 https://shonishi-fe-nextjs-sample.netlify.app/product/overviews へアクセス
 
-## Pages
-
-master ブランチへのマージで GitHub Pages へ storybook が公開されます。
+さらに、そのソースの storybook が GitHubPages へ公開されます。
 
 https://shonishi.github.io/fe-nextjs-sample/ へアクセス
