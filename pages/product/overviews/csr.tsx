@@ -1,5 +1,5 @@
 import Overviews from '@/src/containers/templates/Overviews';
 
-export default function Page() {
+export default function CsrPage() {
   return <Overviews />;
 }

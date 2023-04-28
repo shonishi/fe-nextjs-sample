@@ -6,13 +6,13 @@ import { changeColor, changeSize, selectOverviews } from './slice';
 export const useOverviewsViewModel = () => {
   const loadData = useAppSelector(selectOverviews).loadData;
   const dispatch = useAppDispatch();
-  const loading = useRef(false);
+  const loaded = useRef(loadData ? true : false);
   useEffect(() => {
-    if (!loading.current) {
-      loading.current = true;
+    if (!loaded.current) {
+      loaded.current = true;
       dispatch(load());
     }
-  }, [loading, dispatch]);
+  }, [loaded, dispatch]);
 
   return {
     loadData,
