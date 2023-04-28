@@ -3,45 +3,39 @@
 
 # fe-nextjs-sample
 
-Next.js を使用した fe サーバのサンプルです
+Next.js を使用した fe サーバのサンプルです。
+1 つのテンプレートを、csr と ssr の 2 つの方法で描画します。
 
-## 環境構築
+## ローカルでの環境構築
 
-ライブラリのインストール
+### ライブラリのインストール
 
 ```
 yarn install
 ```
 
-ビルド
+### ビルド
 
 ```
 yarn build
 ```
 
-アプリの起動
+### アプリの起動
 
 ```
 yarn start
 ```
 
-開発者モードでのアプリの起動
+開発者モードの場合
 
 ```
 yarn dev
 ```
 
-画面の表示
+### 画面の表示
 
-```
-http://localhost:3000/product/overviews
-```
-
-## component の表示確認
-
-```
-yarn storybook
-```
+1. csr : http://localhost:3000/product/overviews/csr
+1. ssr : http://localhost:3000/product/overviews/ssr
 
 ## 静的解析
 
@@ -55,6 +49,12 @@ yarn lint
 yarn test
 ```
 
+## component 単位の表示確認
+
+```
+yarn storybook
+```
+
 ## CI
 
 Github Actions で、master ブランチへの PR/マージ時にビルド、静的解析、テストが実施されます。
@@ -63,8 +63,9 @@ Github Actions で、master ブランチへの PR/マージ時にビルド、静
 
 master ブランチへのマージで netlify へデプロイされます。
 
-https://shonishi-fe-nextjs-sample.netlify.app/product/overviews へアクセス
+1. csr : https://shonishi-fe-nextjs-sample.netlify.app/product/overviews/csr
+1. ssr : https://shonishi-fe-nextjs-sample.netlify.app/product/overviews/ssr
 
 さらに、そのソースの storybook が GitHubPages へ公開されます。
 
-https://shonishi.github.io/fe-nextjs-sample/ へアクセス
+https://shonishi.github.io/fe-nextjs-sample/
