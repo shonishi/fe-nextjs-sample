@@ -6,7 +6,7 @@ export async function fetchProductOverviews() {
       return resolve({
         id: 4,
         name: 'あひるちゃん 5羽セット',
-        price: '500円',
+        price: Math.floor(Math.random() * 1000) + '円',
         href: '#',
         breadcrumbs: [
           { id: 1, name: 'おもちゃ', href: '#' },
