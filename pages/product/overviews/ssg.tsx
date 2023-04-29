@@ -7,12 +7,10 @@ export default function SsrPage() {
   return <Overviews />;
 }
 
-export const getServerSideProps = wrapper.getServerSideProps(
-  (store) => async () => {
-    const loadData = await fetchProductOverviews();
-    store.dispatch(setLoadData(loadData));
-    return {
-      props: {},
-    };
-  },
-);
+export const getStaticProps = wrapper.getStaticProps((store) => async () => {
+  const loadData = await fetchProductOverviews();
+  store.dispatch(setLoadData(loadData));
+  return {
+    props: {},
+  };
+});
