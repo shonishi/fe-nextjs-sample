@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details detailsが空の場合、空で表示されること 1`] = `
+<div
+  className="mt-10"
+>
+  <h2
+    className="text-sm font-medium text-gray-900"
+  >
+    Details
+  </h2>
+  <div
+    className="mt-4 space-y-6"
+  >
+    <p
+      className="text-sm text-gray-600"
+    />
+  </div>
+</div>
+`;
+
+exports[`Details detailsに文字列が設定されている場合、それを元に表示されること 1`] = `
+<div
+  className="mt-10"
+>
+  <h2
+    className="text-sm font-medium text-gray-900"
+  >
+    Details
+  </h2>
+  <div
+    className="mt-4 space-y-6"
+  >
+    <p
+      className="text-sm text-gray-600"
+    >
+      あひるのフィギュアです。お風呂に浮かべて楽しいひと時。
+    </p>
+  </div>
+</div>
+`;

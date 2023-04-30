@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Colors colorsが空の場合、何も表示されないこと 1`] = `null`;
+
+exports[`Colors colorsの要素が1つの場合、1つだけ表示されること 1`] = `
+<div>
+  <h3
+    className="text-sm font-medium text-gray-900"
+  >
+    Color
+  </h3>
+  <div
+    aria-labelledby="headlessui-label-:r9:"
+    className="mt-4"
+    id="headlessui-radiogroup-:r8:"
+    onKeyDown={[Function]}
+    role="radiogroup"
+  >
+    <label
+      className="sr-only"
+      id="headlessui-label-:r9:"
+    >
+      Choose a color
+    </label>
+    <div
+      className="flex items-center space-x-3"
+    >
+      <div
+        aria-checked="true"
+        aria-labelledby="headlessui-label-:rb:"
+        className="ring-gray-400 ring-2 relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
+        data-headlessui-state="checked"
+        id="headlessui-radiogroup-option-:ra:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={0}
+      >
+        <span
+          className="sr-only"
+          id="headlessui-label-:rb:"
+        >
+          Pale yellow
+        </span>
+        <span
+          aria-hidden="true"
+          className="bg-yellow-50 h-8 w-8 rounded-full border border-black border-opacity-10"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Colors colorsの要素が複数の場合、全て表示されること 1`] = `
+<div>
+  <h3
+    className="text-sm font-medium text-gray-900"
+  >
+    Color
+  </h3>
+  <div
+    aria-labelledby="headlessui-label-:r1:"
+    className="mt-4"
+    id="headlessui-radiogroup-:r0:"
+    onKeyDown={[Function]}
+    role="radiogroup"
+  >
+    <label
+      className="sr-only"
+      id="headlessui-label-:r1:"
+    >
+      Choose a color
+    </label>
+    <div
+      className="flex items-center space-x-3"
+    >
+      <div
+        aria-checked="true"
+        aria-labelledby="headlessui-label-:r3:"
+        className="ring-gray-400 ring-2 relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
+        data-headlessui-state="checked"
+        id="headlessui-radiogroup-option-:r2:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={0}
+      >
+        <span
+          className="sr-only"
+          id="headlessui-label-:r3:"
+        >
+          Pale yellow
+        </span>
+        <span
+          aria-hidden="true"
+          className="bg-yellow-50 h-8 w-8 rounded-full border border-black border-opacity-10"
+        />
+      </div>
+      <div
+        aria-checked="false"
+        aria-labelledby="headlessui-label-:r5:"
+        className="ring-gray-400 relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
+        data-headlessui-state=""
+        id="headlessui-radiogroup-option-:r4:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          className="sr-only"
+          id="headlessui-label-:r5:"
+        >
+          Yellow
+        </span>
+        <span
+          aria-hidden="true"
+          className="bg-yellow-100 h-8 w-8 rounded-full border border-black border-opacity-10"
+        />
+      </div>
+      <div
+        aria-checked="false"
+        aria-labelledby="headlessui-label-:r7:"
+        className="ring-gray-900 relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
+        data-headlessui-state=""
+        id="headlessui-radiogroup-option-:r6:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          className="sr-only"
+          id="headlessui-label-:r7:"
+        >
+          Dark yellow
+        </span>
+        <span
+          aria-hidden="true"
+          className="bg-yellow-300 h-8 w-8 rounded-full border border-black border-opacity-10"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

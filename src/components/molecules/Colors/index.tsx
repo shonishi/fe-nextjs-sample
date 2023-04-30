@@ -20,6 +20,9 @@ export default function Colors({
   changeColor,
 }: Props) {
   const selectedColor = colors.find((color) => color.id === selectedColorId);
+  if (!selectedColor) {
+    return <></>;
+  }
   return (
     <div>
       <h3 className="text-sm font-medium text-gray-900">Color</h3>
