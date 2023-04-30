@@ -9,11 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [18.x]
-
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -24,4 +22,22 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
       - run: yarn lint
-      - run: yarn test
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          build: yarn build
+          start: yarn start
+          browser: chrome
