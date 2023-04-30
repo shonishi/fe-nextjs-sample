@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Highlights highlightsが空の場合、何も表示されないこと 1`] = `
+<div
+  className="mt-10"
+>
+  <h3
+    className="text-sm font-medium text-gray-900"
+  >
+    Highlights
+  </h3>
+  <div
+    className="mt-4"
+  >
+    <ul
+      className="list-disc space-y-2 pl-4 text-sm"
+      role="list"
+    />
+  </div>
+</div>
+`;
+
+exports[`Highlights highlightsの要素が1つの場合、1つだけ表示されること 1`] = `
+<div
+  className="mt-10"
+>
+  <h3
+    className="text-sm font-medium text-gray-900"
+  >
+    Highlights
+  </h3>
+  <div
+    className="mt-4"
+  >
+    <ul
+      className="list-disc space-y-2 pl-4 text-sm"
+      role="list"
+    >
+      <li
+        className="text-gray-400"
+      >
+        <span
+          className="text-gray-600"
+        >
+          お風呂に浮く
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Highlights highlightsの要素が複数の場合、全て表示されること 1`] = `
+<div
+  className="mt-10"
+>
+  <h3
+    className="text-sm font-medium text-gray-900"
+  >
+    Highlights
+  </h3>
+  <div
+    className="mt-4"
+  >
+    <ul
+      className="list-disc space-y-2 pl-4 text-sm"
+      role="list"
+    >
+      <li
+        className="text-gray-400"
+      >
+        <span
+          className="text-gray-600"
+        >
+          お風呂に浮く
+        </span>
+      </li>
+      <li
+        className="text-gray-400"
+      >
+        <span
+          className="text-gray-600"
+        >
+          握ると音が鳴る
+        </span>
+      </li>
+      <li
+        className="text-gray-400"
+      >
+        <span
+          className="text-gray-600"
+        >
+          シリコン製で丈夫
+        </span>
+      </li>
+      <li
+        className="text-gray-400"
+      >
+        <span
+          className="text-gray-600"
+        >
+          お子様の筋力強化にも
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

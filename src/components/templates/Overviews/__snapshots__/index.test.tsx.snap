@@ -1,0 +1,747 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overviews 指定された値で表示されること 1`] = `
+<div
+  className="bg-white"
+>
+  <div
+    className="pt-6"
+  >
+    <nav
+      aria-label="Breadcrumb"
+    >
+      <ol
+        className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8"
+        role="list"
+      >
+        <li>
+          <div
+            className="flex items-center"
+          >
+            <a
+              className="mr-2 text-sm font-medium text-gray-900"
+              href="#"
+            >
+              おもちゃ
+            </a>
+            <svg
+              aria-hidden="true"
+              className="h-5 w-4 text-gray-300"
+              fill="currentColor"
+              height={20}
+              viewBox="0 0 16 20"
+              width={16}
+            >
+              <path
+                d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z"
+              />
+            </svg>
+          </div>
+        </li>
+        <li>
+          <div
+            className="flex items-center"
+          >
+            <a
+              className="mr-2 text-sm font-medium text-gray-900"
+              href="#"
+            >
+              赤ちゃん・幼児
+            </a>
+            <svg
+              aria-hidden="true"
+              className="h-5 w-4 text-gray-300"
+              fill="currentColor"
+              height={20}
+              viewBox="0 0 16 20"
+              width={16}
+            >
+              <path
+                d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z"
+              />
+            </svg>
+          </div>
+        </li>
+        <li>
+          <div
+            className="flex items-center"
+          >
+            <a
+              className="mr-2 text-sm font-medium text-gray-900"
+              href="#"
+            >
+              お風呂用
+            </a>
+            <svg
+              aria-hidden="true"
+              className="h-5 w-4 text-gray-300"
+              fill="currentColor"
+              height={20}
+              viewBox="0 0 16 20"
+              width={16}
+            >
+              <path
+                d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z"
+              />
+            </svg>
+          </div>
+        </li>
+        <li
+          className="text-sm"
+        >
+          <a
+            aria-current="page"
+            className="font-medium text-gray-500 hover:text-gray-600"
+            href="#"
+          >
+            あひるちゃん 5羽セット
+          </a>
+        </li>
+      </ol>
+    </nav>
+    <div
+      className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8"
+    >
+      <div
+        className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block"
+      >
+        <img
+          alt="Two each of gray, white, and black shirts laying flat."
+          className="h-full w-full object-cover object-center"
+          data-nimg="1"
+          decoding="async"
+          height={0}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          sizes="100vw"
+          src="/_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=3840&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK74_ahirucyansusumu_TP_V.jpg&w=3840&q=75 3840w"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          width={0}
+        />
+      </div>
+      <div
+        className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8"
+      >
+        <div
+          className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg"
+        >
+          <img
+            alt="Model wearing plain black basic tee."
+            className="h-full w-full object-cover object-center"
+            data-nimg="1"
+            decoding="async"
+            height={0}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="100vw"
+            src="/_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=3840&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK85_enjinahirucyan_TP_V.jpg&w=3840&q=75 3840w"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            width={0}
+          />
+        </div>
+        <div
+          className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg"
+        >
+          <img
+            alt="Model wearing plain gray basic tee."
+            className="h-full w-full object-cover object-center"
+            data-nimg="1"
+            decoding="async"
+            height={0}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="100vw"
+            src="/_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=3840&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FPAK88_amazonst_TP_V.jpg&w=3840&q=75 3840w"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            width={0}
+          />
+        </div>
+      </div>
+      <div
+        className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg"
+      >
+        <img
+          alt="Model wearing plain white basic tee."
+          className="h-full w-full object-cover object-center"
+          data-nimg="1"
+          decoding="async"
+          height={0}
+          onError={[Function]}
+          onLoad={[Function]}
+          sizes="100vw"
+          src="/_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=3840&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwww.pakutaso.com%2Fshared%2Fimg%2Fthumb%2FNKJ56_dateahiru_TP_V.jpg&w=3840&q=75 3840w"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          width={0}
+        />
+      </div>
+    </div>
+    <div
+      className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16"
+    >
+      <div
+        className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8"
+      >
+        <h1
+          className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl"
+        >
+          あひるちゃん 5羽セット
+        </h1>
+      </div>
+      <div
+        className="mt-4 lg:row-span-3 lg:mt-0"
+      >
+        <h2
+          className="sr-only"
+        >
+          Product information
+        </h2>
+        <p
+          className="text-3xl tracking-tight text-gray-900"
+        >
+          500円
+        </p>
+        <div
+          className="mt-6"
+        >
+          <h3
+            className="sr-only"
+          >
+            Reviews
+          </h3>
+          <div
+            className="flex items-center"
+          >
+            <div
+              className="flex items-center"
+            >
+              <svg
+                aria-hidden="true"
+                className="text-gray-900 h-5 w-5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="text-gray-900 h-5 w-5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="text-gray-900 h-5 w-5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="text-gray-900 h-5 w-5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="text-gray-200 h-5 w-5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+            <p
+              className="sr-only"
+            >
+              4
+               out of 5 stars
+            </p>
+            <a
+              className="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500"
+              href="#"
+            >
+              117
+               reviews
+            </a>
+          </div>
+        </div>
+        <form
+          className="mt-10"
+        >
+          <div>
+            <h3
+              className="text-sm font-medium text-gray-900"
+            >
+              Color
+            </h3>
+            <div
+              aria-labelledby="headlessui-label-:r1:"
+              className="mt-4"
+              id="headlessui-radiogroup-:r0:"
+              onKeyDown={[Function]}
+              role="radiogroup"
+            >
+              <label
+                className="sr-only"
+                id="headlessui-label-:r1:"
+              >
+                Choose a color
+              </label>
+              <div
+                className="flex items-center space-x-3"
+              >
+                <div
+                  aria-checked="true"
+                  aria-labelledby="headlessui-label-:r3:"
+                  className="ring-gray-400 ring-2 relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
+                  data-headlessui-state="checked"
+                  id="headlessui-radiogroup-option-:r2:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={0}
+                >
+                  <span
+                    className="sr-only"
+                    id="headlessui-label-:r3:"
+                  >
+                    Pale yellow
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="bg-yellow-50 h-8 w-8 rounded-full border border-black border-opacity-10"
+                  />
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-labelledby="headlessui-label-:r5:"
+                  className="ring-gray-400 relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
+                  data-headlessui-state=""
+                  id="headlessui-radiogroup-option-:r4:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    className="sr-only"
+                    id="headlessui-label-:r5:"
+                  >
+                    Yellow
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="bg-yellow-100 h-8 w-8 rounded-full border border-black border-opacity-10"
+                  />
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-labelledby="headlessui-label-:r7:"
+                  className="ring-gray-900 relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
+                  data-headlessui-state=""
+                  id="headlessui-radiogroup-option-:r6:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    className="sr-only"
+                    id="headlessui-label-:r7:"
+                  >
+                    Dark yellow
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="bg-yellow-300 h-8 w-8 rounded-full border border-black border-opacity-10"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="mt-10"
+          >
+            <div
+              className="flex items-center justify-between"
+            >
+              <h3
+                className="text-sm font-medium text-gray-900"
+              >
+                Size
+              </h3>
+              <a
+                className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
+                href="#"
+              >
+                Size guide
+              </a>
+            </div>
+            <div
+              aria-labelledby="headlessui-label-:r9:"
+              className="mt-4"
+              id="headlessui-radiogroup-:r8:"
+              onKeyDown={[Function]}
+              role="radiogroup"
+            >
+              <label
+                className="sr-only"
+                id="headlessui-label-:r9:"
+              >
+                 Choose a size 
+              </label>
+              <div
+                className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4"
+              >
+                <div
+                  aria-checked="false"
+                  aria-disabled={true}
+                  aria-labelledby="headlessui-label-:rb:"
+                  className="cursor-not-allowed bg-gray-50 text-gray-200 group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+                  data-headlessui-state="disabled"
+                  id="headlessui-radiogroup-option-:ra:"
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    id="headlessui-label-:rb:"
+                  >
+                    XXS
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200"
+                  >
+                    <svg
+                      className="absolute inset-0 h-full w-full stroke-2 text-gray-200"
+                      preserveAspectRatio="none"
+                      stroke="currentColor"
+                      viewBox="0 0 100 100"
+                    >
+                      <line
+                        vectorEffect="non-scaling-stroke"
+                        x1={0}
+                        x2={100}
+                        y1={100}
+                        y2={0}
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-labelledby="headlessui-label-:rd:"
+                  className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+                  data-headlessui-state="checked"
+                  id="headlessui-radiogroup-option-:rc:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={0}
+                >
+                  <span
+                    id="headlessui-label-:rd:"
+                  >
+                    XS
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="border-2 border-indigo-500 pointer-events-none absolute -inset-px rounded-md"
+                  />
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-labelledby="headlessui-label-:rf:"
+                  className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+                  data-headlessui-state=""
+                  id="headlessui-radiogroup-option-:re:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    id="headlessui-label-:rf:"
+                  >
+                    S
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+                  />
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-labelledby="headlessui-label-:rh:"
+                  className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+                  data-headlessui-state=""
+                  id="headlessui-radiogroup-option-:rg:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    id="headlessui-label-:rh:"
+                  >
+                    M
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+                  />
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-labelledby="headlessui-label-:rj:"
+                  className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+                  data-headlessui-state=""
+                  id="headlessui-radiogroup-option-:ri:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    id="headlessui-label-:rj:"
+                  >
+                    L
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+                  />
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-labelledby="headlessui-label-:rl:"
+                  className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+                  data-headlessui-state=""
+                  id="headlessui-radiogroup-option-:rk:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    id="headlessui-label-:rl:"
+                  >
+                    XL
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+                  />
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-labelledby="headlessui-label-:rn:"
+                  className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+                  data-headlessui-state=""
+                  id="headlessui-radiogroup-option-:rm:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    id="headlessui-label-:rn:"
+                  >
+                    2XL
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+                  />
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-labelledby="headlessui-label-:rp:"
+                  className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+                  data-headlessui-state=""
+                  id="headlessui-radiogroup-option-:ro:"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  role="radio"
+                  tabIndex={-1}
+                >
+                  <span
+                    id="headlessui-label-:rp:"
+                  >
+                    3XL
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            type="submit"
+          >
+            Add to bag
+          </button>
+        </form>
+      </div>
+      <div
+        className="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pb-16 lg:pr-8 lg:pt-6"
+      >
+        <div>
+          <h3
+            className="sr-only"
+          >
+            Description
+          </h3>
+          <div
+            className="space-y-6"
+          >
+            <p
+              className="text-base text-gray-900"
+            >
+              あひるのフィギュアです。お風呂に浮かべて楽しいひと時。
+            </p>
+          </div>
+        </div>
+        <div
+          className="mt-10"
+        >
+          <h3
+            className="text-sm font-medium text-gray-900"
+          >
+            Highlights
+          </h3>
+          <div
+            className="mt-4"
+          >
+            <ul
+              className="list-disc space-y-2 pl-4 text-sm"
+              role="list"
+            >
+              <li
+                className="text-gray-400"
+              >
+                <span
+                  className="text-gray-600"
+                >
+                  お風呂に浮く
+                </span>
+              </li>
+              <li
+                className="text-gray-400"
+              >
+                <span
+                  className="text-gray-600"
+                >
+                  握ると音が鳴る
+                </span>
+              </li>
+              <li
+                className="text-gray-400"
+              >
+                <span
+                  className="text-gray-600"
+                >
+                  シリコン製で丈夫
+                </span>
+              </li>
+              <li
+                className="text-gray-400"
+              >
+                <span
+                  className="text-gray-600"
+                >
+                  お子様の筋力強化にも
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className="mt-10"
+        >
+          <h2
+            className="text-sm font-medium text-gray-900"
+          >
+            Details
+          </h2>
+          <div
+            className="mt-4 space-y-6"
+          >
+            <p
+              className="text-sm text-gray-600"
+            >
+              かわいいあひるちゃんの5羽セット。シリコン製のため小傷が入りにくく、衛生面も安心です。音を出すにはある程度の力で握る必要がありますので、楽しみながらお子様の筋力を強化することができます。各種サイズをご用意しておりますので、お子様の手の大きさに合う物をお選びいただけます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

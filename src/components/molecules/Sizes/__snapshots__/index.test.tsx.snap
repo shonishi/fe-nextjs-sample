@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sizes sizesが空の場合、何も表示されないこと 1`] = `
+<div
+  className="mt-10"
+>
+  <div
+    className="flex items-center justify-between"
+  >
+    <h3
+      className="text-sm font-medium text-gray-900"
+    >
+      Size
+    </h3>
+    <a
+      className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
+      href="#"
+    >
+      Size guide
+    </a>
+  </div>
+  <div
+    aria-labelledby="headlessui-label-:rn:"
+    className="mt-4"
+    id="headlessui-radiogroup-:rm:"
+    onKeyDown={[Function]}
+    role="radiogroup"
+  >
+    <label
+      className="sr-only"
+      id="headlessui-label-:rn:"
+    >
+       Choose a size 
+    </label>
+    <div
+      className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4"
+    />
+  </div>
+</div>
+`;
+
+exports[`Sizes sizesの要素が1つの場合、1つだけ表示されること 1`] = `
+<div
+  className="mt-10"
+>
+  <div
+    className="flex items-center justify-between"
+  >
+    <h3
+      className="text-sm font-medium text-gray-900"
+    >
+      Size
+    </h3>
+    <a
+      className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
+      href="#"
+    >
+      Size guide
+    </a>
+  </div>
+  <div
+    aria-labelledby="headlessui-label-:rj:"
+    className="mt-4"
+    id="headlessui-radiogroup-:ri:"
+    onKeyDown={[Function]}
+    role="radiogroup"
+  >
+    <label
+      className="sr-only"
+      id="headlessui-label-:rj:"
+    >
+       Choose a size 
+    </label>
+    <div
+      className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4"
+    >
+      <div
+        aria-checked="true"
+        aria-labelledby="headlessui-label-:rl:"
+        className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state="checked"
+        id="headlessui-radiogroup-option-:rk:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={0}
+      >
+        <span
+          id="headlessui-label-:rl:"
+        >
+          XS
+        </span>
+        <span
+          aria-hidden="true"
+          className="border-2 border-indigo-500 pointer-events-none absolute -inset-px rounded-md"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Sizes sizesの要素が複数の場合、全て表示されること 1`] = `
+<div
+  className="mt-10"
+>
+  <div
+    className="flex items-center justify-between"
+  >
+    <h3
+      className="text-sm font-medium text-gray-900"
+    >
+      Size
+    </h3>
+    <a
+      className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
+      href="#"
+    >
+      Size guide
+    </a>
+  </div>
+  <div
+    aria-labelledby="headlessui-label-:r1:"
+    className="mt-4"
+    id="headlessui-radiogroup-:r0:"
+    onKeyDown={[Function]}
+    role="radiogroup"
+  >
+    <label
+      className="sr-only"
+      id="headlessui-label-:r1:"
+    >
+       Choose a size 
+    </label>
+    <div
+      className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4"
+    >
+      <div
+        aria-checked="false"
+        aria-disabled={true}
+        aria-labelledby="headlessui-label-:r3:"
+        className="cursor-not-allowed bg-gray-50 text-gray-200 group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state="disabled"
+        id="headlessui-radiogroup-option-:r2:"
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          id="headlessui-label-:r3:"
+        >
+          XXS
+        </span>
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200"
+        >
+          <svg
+            className="absolute inset-0 h-full w-full stroke-2 text-gray-200"
+            preserveAspectRatio="none"
+            stroke="currentColor"
+            viewBox="0 0 100 100"
+          >
+            <line
+              vectorEffect="non-scaling-stroke"
+              x1={0}
+              x2={100}
+              y1={100}
+              y2={0}
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        aria-checked="false"
+        aria-labelledby="headlessui-label-:r5:"
+        className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state=""
+        id="headlessui-radiogroup-option-:r4:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          id="headlessui-label-:r5:"
+        >
+          XS
+        </span>
+        <span
+          aria-hidden="true"
+          className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+        />
+      </div>
+      <div
+        aria-checked="true"
+        aria-labelledby="headlessui-label-:r7:"
+        className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state="checked"
+        id="headlessui-radiogroup-option-:r6:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={0}
+      >
+        <span
+          id="headlessui-label-:r7:"
+        >
+          S
+        </span>
+        <span
+          aria-hidden="true"
+          className="border-2 border-indigo-500 pointer-events-none absolute -inset-px rounded-md"
+        />
+      </div>
+      <div
+        aria-checked="false"
+        aria-labelledby="headlessui-label-:r9:"
+        className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state=""
+        id="headlessui-radiogroup-option-:r8:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          id="headlessui-label-:r9:"
+        >
+          M
+        </span>
+        <span
+          aria-hidden="true"
+          className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+        />
+      </div>
+      <div
+        aria-checked="false"
+        aria-labelledby="headlessui-label-:rb:"
+        className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state=""
+        id="headlessui-radiogroup-option-:ra:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          id="headlessui-label-:rb:"
+        >
+          L
+        </span>
+        <span
+          aria-hidden="true"
+          className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+        />
+      </div>
+      <div
+        aria-checked="false"
+        aria-labelledby="headlessui-label-:rd:"
+        className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state=""
+        id="headlessui-radiogroup-option-:rc:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          id="headlessui-label-:rd:"
+        >
+          XL
+        </span>
+        <span
+          aria-hidden="true"
+          className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+        />
+      </div>
+      <div
+        aria-checked="false"
+        aria-labelledby="headlessui-label-:rf:"
+        className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state=""
+        id="headlessui-radiogroup-option-:re:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          id="headlessui-label-:rf:"
+        >
+          2XL
+        </span>
+        <span
+          aria-hidden="true"
+          className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+        />
+      </div>
+      <div
+        aria-checked="false"
+        aria-labelledby="headlessui-label-:rh:"
+        className="cursor-pointer bg-white text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
+        data-headlessui-state=""
+        id="headlessui-radiogroup-option-:rg:"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        role="radio"
+        tabIndex={-1}
+      >
+        <span
+          id="headlessui-label-:rh:"
+        >
+          3XL
+        </span>
+        <span
+          aria-hidden="true"
+          className="border-2 border-transparent pointer-events-none absolute -inset-px rounded-md"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
