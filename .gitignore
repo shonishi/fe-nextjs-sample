@@ -37,3 +37,7 @@ next-env.d.ts
 
 # vscode setting
 .vscode
+
+# cypress
+cypress/videos
+cypress/screenshots
