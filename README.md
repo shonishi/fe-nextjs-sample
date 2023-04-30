@@ -44,10 +44,18 @@ yarn dev
 yarn lint
 ```
 
-## テスト
+## 単体テスト
 
 ```
 yarn test
+```
+
+## e2e テスト
+
+アプリを起動した状態で以下を実行
+
+```
+yarn e2e
 ```
 
 ## component 単位の表示確認
@@ -58,7 +66,7 @@ yarn storybook
 
 ## CI
 
-Github Actions で、master ブランチへの PR/マージ時にビルド、静的解析、テストが実施されます。
+Github Actions で、master ブランチへの PR/マージ時にビルド、静的解析、単体テスト、e2e テストが実施されます。
 
 ## CD
 
