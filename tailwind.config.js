@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{ts,tsx}', './pages/**/*.tsx'],
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       gridTemplateRows: {
