@@ -6,7 +6,7 @@
 Next.js を使用した fe サーバのサンプルです。
 1 つのテンプレートを、CSR、SSR、SSG の 3 つの方法で描画します。
 
-## ローカルでの環境構築
+## 環境構築
 
 ### ライブラリのインストール
 
@@ -38,19 +38,19 @@ yarn dev
 1. SSR : http://localhost:3000/product/overviews/ssr
 1. SSG : http://localhost:3000/product/overviews/ssg
 
-## 静的解析
+### 静的解析
 
 ```
 yarn lint
 ```
 
-## 単体テスト
+### 単体テスト
 
 ```
 yarn test
 ```
 
-## e2e テスト
+### e2e テスト
 
 アプリを起動した状態で以下を実行
 
@@ -58,7 +58,7 @@ yarn test
 yarn e2e
 ```
 
-## component 単位の表示確認
+### component 単位の表示確認
 
 ```
 yarn storybook
