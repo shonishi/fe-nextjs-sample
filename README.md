@@ -1,4 +1,5 @@
 ![](https://github.com/shonishi/fe-nextjs-sample/actions/workflows/ci.yml/badge.svg?branch=master)
+[![codecov](https://codecov.io/github/shonishi/fe-nextjs-sample/branch/master/graph/badge.svg?token=64BW6Q5JFP)](https://codecov.io/github/shonishi/fe-nextjs-sample)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c4a43e7-4738-4856-9bc2-574fc0e8b9fc/deploy-status?branch=master)](https://app.netlify.com/sites/shonishi-fe-nextjs-sample/deploys)
 
 # fe-nextjs-sample
