@@ -1,4 +1,5 @@
 ![](https://github.com/shonishi/fe-nextjs-sample/actions/workflows/ci.yml/badge.svg?branch=master)
+[![codecov](https://codecov.io/github/shonishi/fe-nextjs-sample/branch/master/graph/badge.svg?token=64BW6Q5JFP)](https://codecov.io/github/shonishi/fe-nextjs-sample)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c4a43e7-4738-4856-9bc2-574fc0e8b9fc/deploy-status?branch=master)](https://app.netlify.com/sites/shonishi-fe-nextjs-sample/deploys)
 
 # fe-nextjs-sample
@@ -6,7 +7,7 @@
 Next.js を使用した fe サーバのサンプルです。
 1 つのテンプレートを、CSR、SSR、SSG の 3 つの方法で描画します。
 
-## ローカルでの環境構築
+## 環境構築
 
 ### ライブラリのインストール
 
@@ -38,19 +39,19 @@ yarn dev
 1. SSR : http://localhost:3000/product/overviews/ssr
 1. SSG : http://localhost:3000/product/overviews/ssg
 
-## 静的解析
+### 静的解析
 
 ```
 yarn lint
 ```
 
-## 単体テスト
+### 単体テスト
 
 ```
 yarn test
 ```
 
-## e2e テスト
+### e2e テスト
 
 アプリを起動した状態で以下を実行
 
@@ -58,7 +59,7 @@ yarn test
 yarn e2e
 ```
 
-## component 単位の表示確認
+### component 単位の表示確認
 
 ```
 yarn storybook
