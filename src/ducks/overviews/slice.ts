@@ -1,7 +1,7 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../store';
-import { load } from './asyncActions';
 import Response from '@/src/repository/client/fetchProductOverviews/response';
+import { fetchProductOverviews } from '@/src/repository/client/fetchProductOverviews';
 
 export interface OverviewsState {
   loadData?: {
@@ -31,6 +31,10 @@ export interface OverviewsState {
 }
 
 export const initialState: OverviewsState = {};
+
+export const load = createAsyncThunk('Overviews/load', async () => {
+  return await fetchProductOverviews();
+});
 
 export const overviewsSlice = createSlice({
   name: 'Overviews',

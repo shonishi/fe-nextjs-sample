@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../hooks';
-import { load } from './asyncActions';
+import { load } from './slice';
 import { changeColor, changeSize, selectOverviews } from './slice';
 
 export const useOverviewsViewModel = () => {
