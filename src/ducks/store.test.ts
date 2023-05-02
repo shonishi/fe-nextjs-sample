@@ -1,37 +1,16 @@
-import { HYDRATE, createWrapper } from 'next-redux-wrapper';
-import { makeStore, wrapper } from './store';
-import { combineReducers } from 'redux';
+import { makeStore } from './store';
 import { configureStore } from '@reduxjs/toolkit';
 import {
   overviewsSlice,
   initialState as overviewsInitialState,
 } from './overviews/slice';
 import logger from 'redux-logger';
+import { HYDRATE } from 'next-redux-wrapper';
 
 jest.mock('@reduxjs/toolkit', () => {
   return {
     ...jest.requireActual('@reduxjs/toolkit'),
     configureStore: jest.fn(),
-  };
-});
-
-jest.mock('redux', () => {
-  return {
-    ...jest.requireActual('redux'),
-    combineReducers: jest.fn(() => () => {
-      return {
-        dummy: 'dummy',
-      };
-    }),
-  };
-});
-
-jest.mock('next-redux-wrapper', () => {
-  return {
-    ...jest.requireActual('next-redux-wrapper'),
-    createWrapper: jest.fn().mockReturnValue({
-      dummy: 'dummy',
-    }),
   };
 });
 
@@ -57,19 +36,42 @@ describe('store', () => {
       });
 
       it('action.typeがHYDRATEではない場合、combineReducersの実行結果を返すこと', () => {
-        makeStore();
-        const configureStoreMock = configureStore as jest.Mock;
-        expect(configureStoreMock.mock.calls).toHaveLength(1);
-        const result = configureStoreMock.mock.calls[0][0].reducer(state, {
-          type: 'NOT_HYDRATE',
-          payload: actionPayload,
+        jest.resetModules();
+        const combineReducersMock = jest.fn().mockReturnValue(
+          jest.fn().mockReturnValue({
+            dummy: 'dummy',
+          }),
+        );
+        jest.doMock('redux', () => {
+          return {
+            ...jest.requireActual('redux'),
+            combineReducers: combineReducersMock,
+          };
         });
-        const combineReducersMock = combineReducers as jest.Mock;
-        expect(combineReducersMock.mock.calls).toHaveLength(1);
-        expect(combineReducersMock.mock.calls[0][0]).toEqual({
-          overviews: overviewsSlice.reducer,
+        const configureStoreMock = jest.fn();
+        jest.doMock('@reduxjs/toolkit', () => {
+          return {
+            ...jest.requireActual('@reduxjs/toolkit'),
+            configureStore: configureStoreMock,
+          };
         });
-        expect(result).toEqual({ dummy: 'dummy' });
+
+        return import('./store').then((store) => {
+          store.makeStore();
+
+          expect(configureStoreMock.mock.calls).toHaveLength(1);
+          const result = configureStoreMock.mock.calls[0][0].reducer(state, {
+            type: 'NOT_HYDRATE',
+            payload: actionPayload,
+          });
+          expect(combineReducersMock.mock.calls).toHaveLength(1);
+          expect(JSON.stringify(combineReducersMock.mock.calls[0][0])).toEqual(
+            JSON.stringify({
+              overviews: overviewsSlice.reducer,
+            }),
+          );
+          expect(result).toEqual({ dummy: 'dummy' });
+        });
       });
     });
 
@@ -129,11 +131,23 @@ describe('store', () => {
 
   describe('wrapper', () => {
     it('createWrapperの実行結果を返すこと', () => {
-      const createWrapperMock = createWrapper as jest.Mock;
-      expect(createWrapperMock.mock.calls).toHaveLength(1);
-      expect(createWrapperMock.mock.calls[0][0]).toEqual(makeStore);
-      expect(wrapper).toEqual({
+      jest.resetModules();
+      const createWrapperMock = jest.fn().mockReturnValue({
         dummy: 'dummy',
+      });
+      jest.doMock('next-redux-wrapper', () => {
+        return {
+          ...jest.requireActual('next-redux-wrapper'),
+          createWrapper: createWrapperMock,
+        };
+      });
+
+      return import('./store').then((store) => {
+        expect(createWrapperMock.mock.calls).toHaveLength(1);
+        expect(createWrapperMock.mock.calls[0][0]).toEqual(store.makeStore);
+        expect(store.wrapper).toEqual({
+          dummy: 'dummy',
+        });
       });
     });
   });

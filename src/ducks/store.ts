@@ -1,33 +1,23 @@
 import { ThunkAction, configureStore } from '@reduxjs/toolkit';
-import {
-  Action,
-  AnyAction,
-  CombinedState,
-  Reducer,
-  combineReducers,
-} from 'redux';
+import { Action, combineReducers } from 'redux';
 import logger from 'redux-logger';
 import overviewsSlice, {
-  OverviewsState,
   initialState as overviewsInitialState,
 } from '@/src/ducks/overviews/slice';
 import { HYDRATE, createWrapper } from 'next-redux-wrapper';
 
-const reducer: Reducer<
-  CombinedState<{
-    overviews: OverviewsState;
-  }>,
-  AnyAction
-> = (state, action) => {
+const combinedReducer = combineReducers({
+  overviews: overviewsSlice.reducer,
+});
+
+const reducer: typeof combinedReducer = (state, action) => {
   if (action.type === HYDRATE) {
     return {
       ...state,
       ...action.payload,
     };
   } else {
-    return combineReducers({
-      overviews: overviewsSlice.reducer,
-    })(state, action);
+    return combinedReducer(state, action);
   }
 };
 

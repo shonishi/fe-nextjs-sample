@@ -16,21 +16,7 @@ jest.mock('@/src/ducks/overviews/hooks', () => {
   };
 });
 
-jest.mock(
-  '@/src/components/templates/Overviews',
-  () =>
-    ({
-      loadData,
-      changeColor,
-      changeSize,
-    }: ReturnType<typeof useOverviewsViewModel>) => {
-      return {
-        loadData,
-        changeColor,
-        changeSize,
-      };
-    },
-);
+jest.mock('@/src/components/templates/Overviews');
 
 describe('Overviews', () => {
   afterEach(() => {
