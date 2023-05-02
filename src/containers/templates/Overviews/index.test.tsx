@@ -6,7 +6,6 @@ const changeColorMock = jest.fn();
 const changeSizeMock = jest.fn();
 jest.mock('@/src/ducks/overviews/hooks', () => {
   return {
-    __esModule: true,
     useOverviewsViewModel: jest.fn(() => {
       return {
         loadData: loadDataMock,
@@ -17,21 +16,7 @@ jest.mock('@/src/ducks/overviews/hooks', () => {
   };
 });
 
-jest.mock(
-  '@/src/components/templates/Overviews',
-  () =>
-    ({
-      loadData,
-      changeColor,
-      changeSize,
-    }: ReturnType<typeof useOverviewsViewModel>) => {
-      return {
-        loadData,
-        changeColor,
-        changeSize,
-      };
-    },
-);
+jest.mock('@/src/components/templates/Overviews');
 
 describe('Overviews', () => {
   afterEach(() => {
@@ -40,12 +25,10 @@ describe('Overviews', () => {
   it('Overviewsのtemplateを返すこと', () => {
     const result = Overviews();
     expect((useOverviewsViewModel as jest.Mock).mock.calls).toHaveLength(1);
-    expect(result.props).toEqual(
-      expect.objectContaining({
-        loadData: loadDataMock,
-        changeColor: changeColorMock,
-        changeSize: changeSizeMock,
-      }),
-    );
+    expect(result.props).toEqual({
+      loadData: loadDataMock,
+      changeColor: changeColorMock,
+      changeSize: changeSizeMock,
+    });
   });
 });
