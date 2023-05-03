@@ -14,7 +14,11 @@ const customJestConfig = {
   moduleDirectories: ['node_modules', '<rootDir>/'],
   testEnvironment: 'jest-environment-jsdom',
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.stories.ts'],
+  collectCoverageFrom: [
+    'src/**/*.{ts,tsx}',
+    '!src/**/*.stories.ts',
+    '!src/pages/**/*.{ts,tsx}',
+  ],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
   },
