@@ -5,7 +5,15 @@
 # fe-nextjs-sample
 
 Next.js を使用した fe サーバのサンプルです。
-1 つのテンプレートを、CSR、SSR、SSG の 3 つの方法で描画します。
+
+- 1 つのテンプレートを CSR、SSR、SSG の 3 種類でレンダリング
+- 大規模開発に耐えられるように store を導入
+- component は atomic design に則り、再利用性を意識して分割
+- React Hooks は component から viewModel として切り出し（デザイナが component を編集する際、hooks を意識する必要がなくなり作業しやすくなる）
+- component 単位の表示確認のため storybook を導入
+- 静的解析のため eslint を導入
+- 単体テストを jest で実装しています
+- e2e テストを cypress で実装しています
 
 ## 環境構築
 
