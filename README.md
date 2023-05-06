@@ -12,8 +12,8 @@ Next.js を使用した fe サーバのサンプルです。
 - React Hooks は component から viewModel として切り出し（デザイナが component を編集する際、hooks を意識する必要がなくなり作業しやすくなる）
 - component 単位の表示確認のため storybook を導入
 - 静的解析のため eslint を導入
-- 単体テストを jest で実装しています
-- e2e テストを cypress で実装しています
+- 単体テストを jest で実装
+- e2e テストを cypress で実装
 
 ## 環境構築
 
